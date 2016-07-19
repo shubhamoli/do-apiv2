@@ -1,5 +1,5 @@
 /*
- * regions.js : this will handle requests for "/regions" endpoint.
+ * sizes.js : this will handle requests for "/sizes" endpoint.
  */
 
 // This will handle requests.
@@ -15,8 +15,8 @@ module.exports =  function(token, callback){
                       // check validity of token
                       if(token && typeof token === "string"){
                         // valid token
-                        // make request to "/regions"
-                        handler.make_get_request("/regions", token, callback);
+                        // make request to "/sizes"
+                        handler.make_get_request("/sizes", token, callback);
                       }
                       else{
                         console.log("Token parameter expected to be string, "+typeof token+" given");

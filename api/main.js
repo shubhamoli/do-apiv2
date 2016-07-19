@@ -24,7 +24,7 @@ module.exports = {
 
   regions : require('./endpoints/regions'),
 
-  sizes : "",
+  sizes : require('./endpoints/sizes'),
 
   floatingIP : ""
 
