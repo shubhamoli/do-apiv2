@@ -15,8 +15,8 @@ module.exports =  function(token, callback){
                       // check validity of token
                       if(token && typeof token === "string"){
                         // valid token
-                        // make request to "/account"
-                        handler.make_get_request("/account", token, callback);
+                        // make request to "/regions"
+                        handler.make_get_request("/regions", token, callback);
                       }
                       else{
                         console.log("Token parameter expected to be string, "+typeof token+" given");

@@ -22,7 +22,7 @@ module.exports = {
 
   SSH: "",
 
-  regions : "",
+  regions : require('./endpoints/regions'),
 
   sizes : "",
 

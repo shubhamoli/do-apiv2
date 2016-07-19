@@ -17,15 +17,15 @@ module.exports = {
               // check validity of token
               if(token && typeof token === "string"){
                 // valid token
-                // make request to "/account"
+                // make request to "/actions"
                 handler.make_get_request("/actions", token, callback);
               }
               else{
-                console.log("Please provide a valid Access Token");
+                console.log("Token parameter expected to be string, "+typeof token+" given");
               }
             }
             else{
-              console.log("Please provide a valid callback");
+              console.log("callback expected to be Function, "+typeof callback+" given");
             }
 
           }
@@ -47,22 +47,21 @@ module.exports = {
                 // check id
                 if(id && typeof id === "string"){
                   // id is of valid type
-                  // make request to "/account"
+                  // make request to "/actions/$ID"
                   console.log("/actions/"+id);
                   handler.make_get_request("/actions/"+id, token, callback);
                 }
                 else{
-                  console.log("Please provide a valid ID");
+                  console.log("ID parameter expected to be string, "+typeof id+" given");
                 }
-                // make request to "/account"
-                handler.make_get_request("/actions", token, callback);
+
               }
               else{
-                console.log("Please provide a valid Access Token");
+                console.log("Token parameter expected to be string, "+typeof token+" given");
               }
             }
             else{
-              console.log("Please provide a valid callback");
+              console.log("callback expected to be Function, "+typeof callback+" given");
             }
 
           }
