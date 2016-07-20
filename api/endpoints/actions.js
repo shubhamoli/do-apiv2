@@ -48,7 +48,6 @@ module.exports = {
                 if(id && typeof id === "string"){
                   // id is of valid type
                   // make request to "/actions/$ID"
-                  console.log("/actions/"+id);
                   handler.make_get_request("/actions/"+id, token, callback);
                 }
                 else{

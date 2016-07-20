@@ -20,7 +20,13 @@ module.exports = {
 
   images : "",
 
-  SSH: "",
+  ssh: {
+    all: require('./endpoints/ssh').all,
+    byKeyID: require('./endpoints/ssh').byKeyID,
+    create: require('./endpoints/ssh').create,
+    update: require('./endpoints/ssh').update,
+    destroy: require('./endpoints/ssh').destory
+  },
 
   regions : require('./endpoints/regions'),
 
