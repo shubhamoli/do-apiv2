@@ -32,6 +32,17 @@ module.exports = {
 
   sizes : require('./endpoints/sizes'),
 
-  floatingIP : ""
+  floatingIP : {
+    all:require('./endpoints/floatingIP').all,
+    createForDroplet:require('./endpoints/floatingIP').createForDroplet,
+    createForRegion:require('./endpoints/floatingIP').createForRegion,
+    byIP:require('./endpoints/floatingIP').byIP,
+    delete:require('./endpoints/floatingIP').delete,
+    assign:require('./endpoints/floatingIP').assign,
+    unassign:require('./endpoints/floatingIP').unassign,
+    allActions:require('./endpoints/floatingIP').allActions,
+    actionByID:require('./endpoints/floatingIP').actionByID,
+
+  }
 
 };
