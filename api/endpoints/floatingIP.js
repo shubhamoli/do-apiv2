@@ -1,5 +1,5 @@
 /*
- * ssh.js : this will handle requests for "/account/keys" endpoint.
+ * floatingIP.js : this will handle requests for "/floating_ips" endpoint.
  */
 
 // This will handle requests.

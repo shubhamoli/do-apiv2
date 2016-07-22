@@ -18,7 +18,20 @@ module.exports = {
 
   droplets : "",
 
-  images : "",
+  images : {
+    all: require('./endpoints/images').all,
+    allDistribution: require('./endpoints/images').allDistribution,
+    allApplication: require('./endpoints/images').allApplication,
+    userImage: require('./endpoints/images').userImage,
+    allActions: require('./endpoints/images').allActions,
+    byID: require('./endpoints/images').byID,
+    bySlug: require('./endpoints/images').bySlug,
+    update: require('./endpoints/images').update,
+    delete: require('./endpoints/images').delete,
+    transfer: require('./endpoints/images').transfer,
+    convert: require('./endpoints/images').convert,
+    actionByID: require('./endpoints/images').actionByID,
+  },
 
   ssh: {
     all: require('./endpoints/ssh').all,
