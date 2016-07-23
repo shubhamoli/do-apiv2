@@ -12,7 +12,21 @@ module.exports = {
     byID: require('./endpoints/actions').byID
   },
 
-  blockStorage : "",
+  blockStorage : {
+    all: require('./endpoints/blockStorage').all,
+    create: require('./endpoints/blockStorage').create,
+    byID: require('./endpoints/blockStorage').byID,
+    byName: require('./endpoints/blockStorage').byName,
+    delete: require('./endpoints/blockStorage').delete,
+    attach: require('./endpoints/blockStorage').attach,
+    attachByName: require('./endpoints/blockStorage').attachByName,
+    remove: require('./endpoints/blockStorage').remove,
+    removeByName: require('./endpoints/blockStorage').removeByName,
+    resize: require('./endpoints/blockStorage').resize,
+    allActions: require('./endpoints/blockStorage').allActions,
+    actionByID: require('./endpoints/blockStorage').actionsByID
+
+  },
 
   domain : "",
 

@@ -242,7 +242,7 @@ module.exports = {
                       handler.make_put_request("/images/"+image_id, {"name":image_name}, token, callback);
                     }
                     else{
-                      console.log("Image name parameter expected to be JSON, "+typeof image_name+" given");
+                      console.log("Image name parameter expected to be String, "+typeof image_name+" given");
                     }
                   }
                   else{
@@ -319,7 +319,7 @@ module.exports = {
                         handler.make_post_request("/images/"+image_id+"/actions", {"type":"transfer", "region":region_slug}, token, callback);
                       }
                       else{
-                        console.log("Region Slug parameter expected to be JSON, "+typeof region_slug+" given");
+                        console.log("Region Slug parameter expected to be string, "+typeof region_slug+" given");
                       }
                     }
                     else{
