@@ -44,7 +44,7 @@ module.exports = {
                               if(error) {
                                 callback(error, null);
                               }
-                              else if(response.statusCode !== 200 ){
+                              else if(response.statusCode !== 204 ){
                                 var err = "Invalid status code received: "+response.statusCode;
                                 callback(err, null);
                               }
@@ -70,7 +70,7 @@ module.exports = {
                           if(error) {
                             callback(error, null);
                           }
-                          else if(response.statusCode !== 200 ){
+                          else if(response.statusCode !== 201 ){
                             var err = "Invalid status code received: "+response.statusCode;
                             callback(err, null);
                           }

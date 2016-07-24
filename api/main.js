@@ -28,7 +28,17 @@ module.exports = {
 
   },
 
-  domain : "",
+  domains : {
+    all: require("./endpoints/domains").all,
+    create: require("./endpoints/domains").create,
+    byName: require("./endpoints/domains").byName,
+    delete: require("./endpoints/domains").delete,
+    allRecords: require("./endpoints/domains").allRecords,
+    createRecord: require("./endpoints/domains").createRecord,
+    recordByID: require("./endpoints/domains").recordByID,
+    updateRecord: require("./endpoints/domains").updateRecord,
+    deleteRecord: require("./endpoints/domains").deleteRecord
+  },
 
   droplets : "",
 
