@@ -40,7 +40,42 @@ module.exports = {
     deleteRecord: require("./endpoints/domains").deleteRecord
   },
 
-  droplets : "",
+  droplets : {
+    create: require('./endpoints/droplets').create,
+    createMultiple: require('./endpoints/droplets').createMultiple,
+    byID: require('./endpoints/droplets').byID,
+    all: require('./endpoints/droplets').all,
+    byTag: require('./endpoints/droplets').byTag,
+    kernels: require('./endpoints/droplets').kernels,
+    snapshots: require('./endpoints/droplets').snapshots,
+    backups: require('./endpoints/droplets').backups,
+    allActions: require('./endpoints/droplets').allActions,
+    delete: require('./endpoints/droplets').delete,
+    deleteByTag: require('./endpoints/droplets').deleteByTag,
+    neighbors: require('./endpoints/droplets').neighbors,
+    allNeighbors: require('./endpoints/droplets').allNeighbors,
+    
+    enableBackups: require('./endpoints/droplet_actions').enableBackups,
+    disableBackups: require('./endpoints/droplet_actions').disableBackups,
+    reboot: require('./endpoints/droplet_actions').reboot,
+    powerCycle: require('./endpoints/droplet_actions').powerCycle,
+    shutdown: require('./endpoints/droplet_actions').shutdown,
+    powerOFF: require('./endpoints/droplet_actions').powerOFF,
+    powerON: require('./endpoints/droplet_actions').powerON,
+    restore: require('./endpoints/droplet_actions').restore,
+    passwordReset: require('./endpoints/droplet_actions').passwordReset,
+    resize: require('./endpoints/droplet_actions').resize,
+    rebuild: require('./endpoints/droplet_actions').rebuild,
+    rename: require('./endpoints/droplet_actions').rename,
+    changeKernels: require('./endpoints/droplet_actions').changeKernels,
+    enableIPV6: require('./endpoints/droplet_actions').enableIPV6,
+    enablePrivateNetwork: require('./endpoints/droplet_actions').enablePrivateNetwork,
+    takeSnapshot: require('./endpoints/droplet_actions').takeSnapshot,
+    actionByID: require('./endpoints/droplet_actions').actionByID,
+
+
+
+  },
 
   images : {
     all: require('./endpoints/images').all,

@@ -201,7 +201,7 @@ module.exports = {
                         handler.make_post_request("/volumes/"+drive_id+"/actions", payload, token, callback);
                       }
                       else{
-                        console.log("Payload parameter expected to be JSON, "+typeof region_slug+" given");
+                        console.log("Payload parameter expected to be JSON, "+typeof payload+" given");
                       }
                     }
                     else{
